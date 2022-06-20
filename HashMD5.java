@@ -32,7 +32,7 @@ public class HashMD5 {
         md.update(phrase.getBytes(), 0, phrase.length());
             System.out.println(new BigInteger(1, md.digest()).toString(16));
         } catch (NoSuchAlgorithmException e){
-  
+            System.out.println("Exception throw: " + e);
     }
     }
     
